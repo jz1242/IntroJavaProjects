@@ -1,0 +1,49 @@
+import java.io.IOException;
+import java.util.*;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.io.FileReader;
+
+public class MazeDriver {
+	public static void main(String[] args) throws IOException {
+		Scanner inFile = new Scanner(new FileReader("maze1.txt"));
+		char[][] initialmaze;
+		int rows = 0;
+		int columns = 0;
+		int mushrooms = 0;
+		for (int i = 0; i < 3; i++) {
+			if (i == 0) {
+				rows = inFile.nextInt();
+			} else if (i == 1) {
+				columns = inFile.nextInt();
+			} else {
+				mushrooms = inFile.nextInt();
+			}
+		}
+		initialmaze = new char[rows][columns];
+		for (int i = 0; i < rows; i++) {
+			if (inFile.hasNext()) {
+				for (int j = 0; j < columns; j++) {
+					if (inFile.hasNext()) {
+						//initialmaze[i][j] = inFile.next().charAt(0);
+						System.out.print(inFile.next().charAt(j));
+					}
+				}
+				
+				//System.out.println();
+			}
+			System.out.println();
+		}
+		inFile.close();
+		for (int i = 0; i < rows; i++) {
+
+			for (int j = 0; j < columns; j++) {
+
+				//System.out.print(initialmaze[i][j]);
+
+			}
+			//System.out.println();
+		}
+	}
+
+}

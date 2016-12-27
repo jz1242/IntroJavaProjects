@@ -1,0 +1,155 @@
+
+public class PiggyBank extends Object {
+	public static int CENTS_PER_DIME=10;
+	public static int CENTS_PER_NICKEL=5;
+	public static int CENTS_PER_PENNY=1;
+	public static int CENTS_PER_QUARTER=25;
+	private int dimes;
+	private int nickels;
+	private int pennies;
+	private int quarters;
+	
+	public PiggyBank(){
+		this.dimes=0;
+		this.nickels=0;
+		this.pennies=0;
+		this.quarters=0;
+		
+	}
+	public PiggyBank(int quarters, int dimes, int nickels, int pennies){
+		this.dimes=dimes;
+		this.nickels=nickels;
+		this.quarters=quarters;
+		this.pennies=pennies;
+		
+	}
+	public int getQuarters(){
+		return quarters;
+	}
+	public int getDimes(){
+		return dimes;
+		
+	}
+	public int getNickels(){
+		return nickels;
+	}
+	public int getPennies(){
+		return pennies;
+	}
+	public void insertQuarters(int howMany){
+		this.quarters+=howMany;
+	}
+	public void insertDimes(int howMany){
+		this.dimes+=howMany;
+	}
+	public void insertNickels(int howMany){
+		this.nickels+=howMany;
+	}
+	public void insertPennies(int howMany){
+		this.pennies+=howMany;
+	}
+	public int removeQuarters(int howMany){
+		if(howMany>=this.quarters){
+			this.quarters=0;
+			return howMany-this.quarters;
+		}
+		this.quarters-=howMany;
+		return howMany;
+	}
+	public int removeDimess(int howMany){
+		if(howMany>=this.dimes){
+			this.dimes=0;
+			return howMany-this.dimes;
+		}
+		this.dimes-=howMany;
+		return howMany;
+	}
+	public int removeNickels(int howMany){
+		if(howMany>=this.nickels){
+			this.nickels=0;
+			return howMany-this.nickels;
+		}
+		this.nickels-=howMany;
+		return howMany;
+	}
+
+	public int removePennies(int howMany){
+		if(howMany>=this.pennies){
+			this.pennies=0;
+			return howMany-this.pennies;
+		}
+		this.pennies-=howMany;
+		return howMany;
+	}
+	public int getTotal(){
+		return this.quarters*CENTS_PER_QUARTER+this.dimes*CENTS_PER_DIME+this.nickels*CENTS_PER_NICKEL+this.pennies;
+	}
+	public boolean withdrawAmount(int totalWanted){
+		if(totalWanted>getTotal()){
+			return false;
+		}
+		this.quarters-=totalWanted/25;
+		this.dimes-=(totalWanted%25)/10;
+		this.nickels-=((totalWanted%25)%10)/5;
+		this.pennies-=((totalWanted%25)%10)%5;
+		return true;
+	}
+	public boolean equals(PiggyBank other){
+		if((other.getQuarters()==this.getQuarters())&&(other.getDimes()==this.getDimes())&&(other.getNickels()==this.getNickels())&&(other.getPennies()==this.getPennies())){
+			return true;
+		}
+		return false;
+	}
+	public int compareTo(PiggyBank other){
+		if(other.getTotal()>this.getTotal()){
+			return -1;
+		}
+		if(other.getTotal()==this.getTotal()){
+			return 0;
+		}
+		return 1;
+	}
+	public String toString(){
+		String print="Bank Contains:\n";
+		if(getTotal()==0){
+			return "Bank is empty";
+		}
+		if(this.quarters>0){
+			if(this.quarters==1){
+				print+="1 quarter\n";
+			}
+			else{
+				print+=this.quarters+" quarters\n";
+			}
+		}
+		if(this.dimes>0){
+			if(this.dimes==1){
+				print+="1 dime\n";
+			}
+			else{
+				print+=this.dimes+" dimes\n";
+			}
+		}
+		if(this.nickels>0){
+			if(this.nickels==1){
+				print+="1 nickel\n";
+			}
+			else{
+				print+=this.nickels+" nickels\n";
+			}
+		}
+		if(this.pennies>0){
+			if(this.pennies==1){
+				print+="1 penny\n";
+			}
+			else{
+				print+=this.pennies+" pennies\n";
+			}
+		}
+		return print;
+		
+	}
+
+
+
+}

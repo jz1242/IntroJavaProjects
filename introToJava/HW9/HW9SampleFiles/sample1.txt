@@ -1,0 +1,209 @@
+Enter the filename with the maze -> maze1.txt
+
+++++M++
++S +  +
+++  S++
++  ++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+Invalid move
+
+++++M++
++S +  +
+++  S++
++  ++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++.++
++S +M +
+++  S++
++  ++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+Invalid move
+
+++++.++
++S +M +
+++  S++
++  ++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++.++
++S +. +
+++  M++
++  ++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++.++
++S +. +
+++ M.++
++  ++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++.++
++S +. +
+++M..++
++  ++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++.++
++S +. +
+++...++
++ M++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++.++
++S +. +
+++...++
++M.++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+Invalid move
+
+++++.++
++S +. +
+++...++
++M.++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
+++++.++
++S +. +
+++...++
++.M++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++.++
++S +. +
+++M..++
++..++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++.++
++SM+. +
+++...++
++..++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++.++
++M.+. +
+++...++
++..++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
+++++.++
++.M+. +
+++...++
++..++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++.++
++..+. +
+++M..++
++..++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++.++
++..+. +
+++...++
++.M++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++.++
++..+. +
+++...++
++M.++ +
++X+++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++.++
++..+. +
+++...++
++..++ +
++M+++++
+You Won in 15 moves!!

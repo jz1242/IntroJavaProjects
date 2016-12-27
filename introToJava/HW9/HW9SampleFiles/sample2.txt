@@ -1,0 +1,464 @@
+Enter the filename with the maze -> maze2.txt
+
+++++X+++++++
+++S  +  ++S+
++  + ++ +  M
++ +++   + ++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+Invalid move
+
+++++X+++++++
+++S  +  ++S+
++  + ++ +  M
++ +++   + ++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+Invalid move
+
+++++X+++++++
+++S  +  ++S+
++  + ++ +  M
++ +++   + ++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+Invalid move
+
+++++X+++++++
+++S  +  ++S+
++  + ++ +  M
++ +++   + ++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> 
+
+    j
+
+++++X+++++++
+++S  +  ++S+
++  + ++ + M.
++ +++   + ++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++X+++++++
+++S  +  ++M+
++  + ++ + ..
++ +++   + ++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++X+++++++
+++S  +  ++.+
++  + ++ + M.
++ +++   + ++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +M..
++ +++   + ++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +M++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+Invalid move
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +M++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+Invalid move
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +M++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +M..
++ +++   +.++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +M++
++  +  +  SS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +.++
++  +  +  MS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+Invalid move
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +.++
++  +  +  MS+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +.++
++  +  +  .M+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +.++
++  +  +  M.+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +.++
++  +  + M..+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> 
+j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++   +.++
++  +  +M...+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++  M+.++
++  +  +....+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++ M.+.++
++  +  +....+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++M..+.++
++  +  +....+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++  + M+....+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++  +M.+....+
+++   +++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++  +..+....+
+++  M+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> k
+Invalid move
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++  +..+....+
+++  M+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++  +..+....+
+++ M.+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++  +..+....+
+++M..+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++ M+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+Invalid move
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++ M+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> j
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++ +++...+.++
++M.+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++X+++++++
+++S  +  ++.+
++  + ++ +...
++M+++...+.++
++..+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++X+++++++
+++S  +  ++.+
++M + ++ +...
++.+++...+.++
++..+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
+++++X+++++++
+++S  +  ++.+
++.M+ ++ +...
++.+++...+.++
++..+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++X+++++++
+++M  +  ++.+
++..+ ++ +...
++.+++...+.++
++..+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
+++++X+++++++
+++.M +  ++.+
++..+ ++ +...
++.+++...+.++
++..+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
+++++X+++++++
+++..M+  ++.+
++..+ ++ +...
++.+++...+.++
++..+..+....+
+++...+++++++
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> i
+
+++++M+++++++
+++...+  ++.+
++..+ ++ +...
++.+++...+.++
++..+..+....+
+++...+++++++
+You Won in 29 moves!!

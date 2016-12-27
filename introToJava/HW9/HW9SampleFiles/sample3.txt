@@ -1,0 +1,69 @@
+Enter the filename with the maze -> maze3.txt
+
++    +
+M    X
+      
+      
+      
++    +
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
++    +
+.M   X
+      
+      
+      
++    +
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
++    +
+..M  X
+      
+      
+      
++    +
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
++    +
+...M X
+      
+      
+      
++    +
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
++    +
+....MX
+      
+      
+      
++    +
+Enter i to move up
+Enter j to move left
+Enter k to move down
+Enter l to move right
+Choice -> l
+
++    +
+.....M
+      
+      
+      
++    +
+You Won in 5 moves!!

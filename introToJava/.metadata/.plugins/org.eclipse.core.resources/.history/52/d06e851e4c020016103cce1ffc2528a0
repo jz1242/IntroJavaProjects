@@ -1,0 +1,80 @@
+import java.io.IOException;
+import java.util.*;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.io.FileReader;
+
+public class MazeDriver {
+	public static void main(String[] args) throws IOException {
+		Scanner inFile = new Scanner(new FileReader("maze1.txt"));
+		Scanner sc = new Scanner(System.in);
+		char[][] initialmaze;
+		int rows = 0;
+		int columns = 0;
+		int mushrooms = 0;
+		for (int i = 0; i < 3; i++) {
+			if (i == 0) {
+				rows = inFile.nextInt();
+			} else if (i == 1) {
+				columns = inFile.nextInt();
+			} else {
+				mushrooms = inFile.nextInt();
+			}
+		}
+		initialmaze = new char[rows][columns];
+
+		String mazeholder = "";
+		while (inFile.hasNextLine()) {
+
+			mazeholder += inFile.nextLine();
+
+		}
+		// System.out.println(mazeholder);
+		int k = 0;
+		for (int i = 0; i < rows; i++) {
+
+			for (int j = 0; j < columns; j++) {
+
+				// initialmaze[i][j] = mazeholder.charAt(k);
+				if (k < mazeholder.length()) {
+					initialmaze[i][j] = mazeholder.charAt(k);
+					k++;
+				}
+
+				// System.out.println();
+			}
+
+		}
+		inFile.close();
+		for (int i = 0; i < rows; i++) {
+
+			for (int j = 0; j < columns; j++) {
+
+				System.out.print(initialmaze[i][j]);
+
+			}
+			System.out.println();
+		}
+		char[][] tempmaze = initialmaze;
+		int tempmush = mushrooms;
+		boolean finishgame = false;
+	
+			Maze play = new Maze(tempmaze, tempmush);
+			String a=sc.nextLine().toLowerCase();
+			for (int i = 0; i < rows-1; i++) {
+
+				for (int j = 0; j < columns-1; j++) {
+
+					System.out.print(play.move('k').length);
+
+				}
+				System.out.println();
+			}
+			if(!play.isX()){
+				finishgame=true;
+			}
+		
+
+	}
+
+}

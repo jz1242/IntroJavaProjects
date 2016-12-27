@@ -1,0 +1,129 @@
+
+public class Maze {
+	private char[][] maze;
+	private int rowpos=0;
+	private int colpos=0;
+	private int mushrooms = 0;
+
+	public Maze(char[][] maze, int mushrooms) {
+		this.maze = maze;
+		this.mushrooms = mushrooms;
+	}
+
+	public void findMario() {
+		for (int i = 0; i < maze.length; i++) {
+
+			for (int j = 0; j < maze[0].length; j++) {
+
+				if (maze[i][j] == 'M') {
+					rowpos = i;
+					colpos = j;
+				}
+
+			}
+
+		}
+	}
+
+	public char[][] move(char motion) {
+		findMario();
+		if (motion == 'i') {
+			if (canMove('i')) {
+				if(maze[rowpos-1][colpos] =='S'){
+					mushrooms--;
+				}
+				maze[rowpos][colpos] = '.';
+				maze[rowpos-1][colpos] = 'M';
+			}
+			return maze;
+		}
+		else if (motion == 'k') {
+			
+			
+				//,aze[rowpos][colpos] = '.';
+				maze[1k ][colpos] = 'q';
+
+			
+			return maze;
+		}
+		else if (motion == 'j') {
+			if (canMove('j')) {
+				if(maze[rowpos-1][colpos] =='S'){
+					mushrooms--;
+				}
+				maze[rowpos][colpos] = '.';
+				maze[rowpos][colpos-1] = 'M';
+			}
+			return maze;
+		}
+		else if (motion == 'l') {
+			if (canMove('l')) {
+				if(maze[rowpos +1][colpos] =='S'){
+					mushrooms--;
+				}
+				maze[rowpos][colpos] = '.';
+				maze[rowpos][colpos+1] = 'M';
+			}
+			return maze;
+		}
+		return maze;
+	}
+
+	public boolean canMove(char motion) {
+		if (motion == 'i') {
+			if (maze[rowpos][colpos - 1] == ' ' || maze[rowpos][colpos - 1] == 'S'
+					|| (maze[rowpos][colpos - 1] == 'X' && mushrooms == 0)) {
+				return true;
+			}
+		}
+		if (motion == 'k') {
+			if (maze[rowpos][colpos + 1] == ' ' || maze[rowpos][colpos + 1] == 'S'
+					|| (maze[rowpos][colpos + 1] == 'X' && mushrooms == 0)) {
+				return true;
+			}
+		}
+		if (motion == 'j') {
+			if (maze[rowpos - 1][colpos] == ' ' || maze[rowpos - 1][colpos] == 'S'
+					|| (maze[rowpos - 1][colpos] == 'X' && mushrooms == 0)) {
+				return true;
+			}
+		}
+		if (motion == 'l') {
+			if (maze[rowpos + 1][colpos] == ' ' || maze[rowpos + 1][colpos] == 'S'
+					|| (maze[rowpos + 1][colpos] == 'X' && mushrooms == 0)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public int movestaken() {
+		int moves = 0;
+		for (int i = 0; i < maze.length; i++) {
+
+			for (int j = 0; j < maze[0].length; j++) {
+
+				if (maze[i][j] == '.') {
+					moves++;
+				}
+
+			}
+			
+		}
+		return moves;
+	}
+	public boolean isX(){
+		for (int i = 0; i < maze.length; i++) {
+
+			for (int j = 0; j < maze[0].length; j++) {
+
+				if (maze[i][j] == 'X') {
+					return true;
+				}
+
+			}
+			
+		}
+		return false;
+	}
+}

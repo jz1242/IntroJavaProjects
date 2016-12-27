@@ -1,0 +1,11 @@
+
+public class Maze {
+	private char[][] maze;
+
+	public Maze(int rows, int columns){
+		maze=new char[rows][columns];
+	}
+	public boolean move(char motion){
+		return false; 
+	}
+}

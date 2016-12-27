@@ -1,0 +1,27 @@
+
+public class PiggyBank extends Object {
+	public static int CENTS_PER_DIME;
+	public static int CENTS_PER_NICKEL;
+	public static int CENTS_PER_PENNY;
+	public static int CENTS_PER_QUARTER;
+	private int dimes;
+	private int nickels;
+	private int pennies;
+	private int quarters;
+	
+	public PiggyBank(){
+		this.dimes=0;
+		this.nickels=0;
+		this.pennies=0;
+		this.quarters=0;
+		
+	}
+	public PiggyBank(int quarters, int dimes, int nickels, int pennies){
+		this.dimes=dimes;
+		this.nickels=nickels;
+		this.quarters=quarters;
+		this.pennies=pennies;
+		
+	}
+
+}

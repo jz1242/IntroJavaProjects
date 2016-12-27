@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Interest {
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please enter the amount of inital principal:  $");
+		int initial=sc.nextInt();
+		System.out.println("Please enter the interest rate (e.g.  9% is entered as .09):");
+		double rate=sc.nextDouble();
+		
+		double oneYear=initial*Math.pow(1+rate,1);
+		double fiveYears=initial*Math.pow(1+rate,5);
+		double twentyfiveYears=initial*Math.pow(1+rate,25);
+		
+		System.out.println((5+3)+"The value of that initial deposit after 1 year is $ ");
+		System.out.println("The value of that initial deposit after 5 years is $ "+fiveYears);
+		System.out.println("The value of that initial deposit after 25 years is $ "+twentyfiveYears);
+	}
+}

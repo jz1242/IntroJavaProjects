@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class MagicNumber {
+	public static void main(String[] args){
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Please enter the first place team's city and name:\n");
+		int teamName=sc.nextInt();
+		System.out.print("Please enter their number of WINS so far:");
+		String wins=sc.nextLine();
+		
+		System.out.print("Please enter the number of LOSSES so far for the second place team:");
+		int losses=sc.nextInt();
+		System.out.print("Please enter the total number of games per team:");
+		int total=sc.nextInt();
+		//int magicNum=total-wins-losses+1;
+		
+	//	System.out.println("\nThe "+teamName+" have a magic number of "+magicNum);
+		
+	}
+
+}
